@@ -1,5 +1,5 @@
 {
-  "Are uncertain EEG reports noisy labels or borderline signals.md": "6eff01a11b75ae21b6e89274acab7f07f20842055562462ecd4f8ed618343514",
+  "Are uncertain EEG reports noisy labels.md": "6eff01a11b75ae21b6e89274acab7f07f20842055562462ecd4f8ed618343514",
   "assets/classification-roc.png": "dc96fccdd6ace152778bfa170b27da8631edf4d79f177e25b7d290486f778d78",
   "assets/diagnosis-age-umap.png": "462ad3f91021a3468f7055621257f96fd3e783ff08047c7da07f452e1f3c2148",
   "assets/EEG_report_confidence/certainty_anchor_probe.png": "304dd9c16cda8c596ebd349a55a0601df1ba5ebb3d029a08024a5a6775a83cfb",
@@ -8,7 +8,12 @@
   "assets/EEG_report_confidence/certainty_direct_groupings.png": "224ba43c1a6c45a3ca3e67165ed411a2af1e0a53215ccd2cba512a1b10984fe9",
   "assets/EEG_report_confidence/certainty_manifold_pca.png": "71fc30e08d195f14ce6ba975ad8a3ac73ce259ddc48c36704e0930b554630b28",
   "assets/EEG_report_confidence/certainty_signatures.png": "f51a7b216bad561eb1d9461d6ddb0e0bb5b7c8f80ede834be37f94a397812cff",
+  "assets/MEG_religion/dmn_absolute_slopes.png": "e18a583838045262eb97a155e1a4f6c398114958277a6f63b0ca96ae87231c92",
+  "assets/MEG_religion/dmn_rest_coefficients.png": "d991267ec7ee25b587f867029992aa81a6d2b3337fc31a6c3fd51e552fb03227",
+  "assets/MEG_religion/exp1_network_coefficients.png": "670e492c6b0507de526fccd5740cfa17720aa09a5495216653a5ad0c617f863e",
+  "assets/MEG_religion/fooof_parcel_overview.png": "7831c91da7b7e75b8b9293160114401b0b3493edab159da45cc8fd50533edf29",
   "assets/patients-controls-umap.png": "befb8dcfc3ba4d490879f0302164b1c83a76f38fe82b6ce48760d603e68e59b9",
   "EEG classification better needs control studies.md": "c6bf23b6073136799008233d29b1fde5db0a44b7eafee8829b3afee846457e17",
-  "index.md": "3c5c82920861d788f7048c6bcd45ad6a259eb4dc6ea5f9d37d4d6d3c34a4963d"
+  "index.md": "9ffdd12ecc1ddcb687b3cbc520949cba56b89c0e373a777aa12808506d7234b3",
+  "Religiosity in autistic and schizotypal traits.md": "9d1cf377d050555feb36a9dd4026f11fbb369c5175cd5d2851eed03cc8841f12"
 }
