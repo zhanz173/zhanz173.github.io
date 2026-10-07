@@ -6,7 +6,7 @@ cssclasses:
 ---
 ## About me
 
-I am a machine learning engineer / software engineer working at the intersection of **machine learning, biomedical signal processing, and scientific computing**.
+I am a machine learning engineer / software engineer working at the intersection of machine learning, biomedical signal processing, and scientific computing.
 
 I am currently completing an MSc at Simon Fraser University, where my research focuses on machine learning for large-scale clinical EEG data. My work includes representation learning, ordinal prediction, signal processing, and modeling uncertainty in routine clinical data.
 
@@ -15,10 +15,9 @@ Previously, I worked at Huawei Technologies on production C/C++ software. I am i
 ---
 ## About This Site
 
-This site is a collection of projects, experiments, and technical notes from my unpublished work in master's program and ideas. Some pages document completed research projects, while others explore ideas that did not become formal publications but could still be useful technically. 
+This site is a collection of projects, experiments, and technical notes during my MSc study. The site is repurposed from my Obsidian markdown and published as an interconnected set of notes. 
 
-The site is written primarily in Obsidian and published as an interconnected set of notes.
-
+---
 ---
 
 ## Projects
@@ -42,6 +41,7 @@ Using frozen LaBraM and REVE representations, we found that uncertain cases tend
 [[Are uncertain EEG reports noisy labels|Read the experiment →]]
 
 ---
+
 ### EEG classification better needs control studies
 
 **EEG · classification · 2025**
@@ -49,3 +49,13 @@ Using frozen LaBraM and REVE representations, we found that uncertain cases tend
 An experiment comparing pretrained EEG representations with spectral features raises a more difficult question: what is the classifier actually learning? This note explores why promising discrimination needs stronger controls before it can support disease-specific claims.
 
 [[EEG classification better needs control studies|Read the experiment →]]
+
+---
+---
+
+## Notes
+### EEG compression ratio
+
+Stronger compression preferentially degrades faster EEG activity while low-frequency delta remains comparatively well preserved. MSE prioritizes signal energy over task relevance. Under compression, it may discard low-energy features that carry more important information.
+
+[[EEG compression ratio]]

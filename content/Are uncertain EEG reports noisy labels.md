@@ -1,3 +1,4 @@
+#EEG #ML #label_uncertainty #classifcation
 
 Clinical EEG reports rarely behave like the clean binary labels we use to train machine-learning models. A neurologist may describe an EEG as clearly normal, probably normal, suspicious but not definitive, or clearly abnormal. When we reduce all of this language to **normal vs. abnormal**, we throw away something potentially important: how clear the evidence appeared to the reader.
 
@@ -9,7 +10,7 @@ What makes an LLM give an uncertain classification to the EEG report? There are 
 
 We tested these hypothesis using **35,946 six-minute EEGs from 33,631 patients** with frozen [LaBraM](https://github.com/935963004/LaBraM) and [REVE](https://arxiv.org/abs/2510.21585) features.  Each EEG was segmented into 90 nonoverlapping four-second windows and the features are extracted per-window. We averaged the windows for recording-level probes, while retaining the full window sequences for representational similarity.
 
-## First, do LaBraM and REVE see the same EEG structure?
+## Do LaBraM and REVE see the same EEG structure?
 
 Both LaBraM and REVE are transformer-based encoder with identical architectural design training strategy. This makes an interest question whether: whether two features capture identical EEG information?
 

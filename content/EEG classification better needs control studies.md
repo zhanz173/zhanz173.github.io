@@ -1,3 +1,4 @@
+#EEG #ML #classifcation
 
 Leading models in popular Temple University dataset (TUBA) can achieve near 90% accuracy. The results looked promising if we focused on narrow EEG abnormality detection. It becomes much harder to interpret when we asked what the model might actually be recognizing. They could simply learn confounding factors rather than disease-specific biomarkers. This short experiment expose a problem in model evaluation: **a model can perform well while doesn't learn meaningful biomarker.**
 
@@ -57,7 +58,7 @@ The pretrained features outperformed the mean spectral features in all four comp
 
 ![ROC curves comparing spectral and LaBraM features for four inpatient diagnostic groups against outpatient controls.](assets/classification-roc.png)
 
-*Original draft, Figure 1. Solid curves show the mean-feature comparisons summarized above; dashed curves show the PCA variants. The source figure labels its shaded bands as 95% confidence intervals, but the draft does not explain their construction.*
+*Figure 1. Solid curves show the mean-feature comparisons summarized above; dashed curves show the PCA variants. The source figure labels its shaded bands as 95% confidence intervals, but the draft does not explain their construction.*
 
 ## What alternative explanation for the score
 
@@ -69,6 +70,8 @@ All these factors make disease prediction need stronger evidence than AUC. To cl
 
 We used UMAP to inspect a two-dimensional projection of the learned representations. When the inpatient diagnostic groups were plotted together, they overlapped substantially. There was also visible age-related structure; the draft reported a correlation of *r* = 0.41 between age and UMAP coordinates.
 
+These observations raised the possibility that broad patient characteristics organized the representation more strongly than the diagnostic categories we wanted to predict.
+
 ![UMAP projection of inpatient EEG representations, with diagnostic groups shown by marker shape and age shown by color.](assets/diagnosis-age-umap.png)
 *Figure 3. Diagnostic groups overlap in the projection, while age-related structure is visible. This highlight the need for proper age-control in study design*
 
@@ -76,8 +79,6 @@ When outpatients were included, the projection showed a more apparent distinctio
 
 ![UMAP projection of inpatient and outpatient EEG representations, with larger inpatient markers indicating higher reported comorbidity levels.](assets/patients-controls-umap.png)
 *Figure 2. Crosses represent outpatients and circles represent inpatients. Circle size encodes the comorbidity levels used in the original analysis. The question worth asking is whether model learned severity or the actually disease biomarker. *
-
-These observations raised the possibility that broad patient characteristics organized the representation more strongly than the diagnostic categories we wanted to predict.
 
 ## A more clinically grounded classification target
 
@@ -107,6 +108,7 @@ flowchart TD
 Finding type and spatial distribution are not mutually exclusive disease categories: a recording may contain focal epileptiform discharges, generalized slowing, or multiple findings. Their causes still require clinical interpretation. For example, generalized slowing can occur with several underlying conditions and medication effects, as described in the [American Epilepsy Society EEG atlas](https://www.ncbi.nlm.nih.gov/books/NBK390357/).
 
 EEG finding classification is more appealing as a clinical support task because its targets are observable in the recording, its predictions can be checked against specific EEG segments for human validation, and its outputs fit directly into the reporting workflow.
+
 ## What this means for EEG benchmarks
 
 This concern motivated our skepticism about neurological disease classification based on purely EEG. If training and test sets preserve the same relationship between labels and population or acquisition differences, a model may generalize across that split without learning the disease-specific information we hope it has learned.
