@@ -54,7 +54,17 @@ An experiment comparing pretrained EEG representations with spectral features ra
 ---
 
 ## Notes
+
+### Auxiliary loss improve clinical EEG classification 
+**EEG · classification · contrastive learning**
+
+Auxiliary objectives help EEG classifiers learn beyond noisy clinical labels. Reconstruction and contrastive alignment improve classification. Within-patient contrastive negatives also reduce subject identifiability, suggesting that negative sampling can influence representations preservation, even without clearer class clustering.
+
+[[Auxiliary loss improve EEG classification]]
+
+---
 ### EEG compression ratio
+**EEG · Autoencoder**
 
 Stronger compression preferentially degrades faster EEG activity while low-frequency delta remains comparatively well preserved. MSE prioritizes signal energy over task relevance. Under compression, it may discard low-energy features that carry more important information.
 

@@ -1,5 +1,8 @@
 {
   "Are uncertain EEG reports noisy labels.md": "59a108ac4326749550d3e36830b52ca1bfb384dfe13d94e87e64fc1441948276",
+  "assets/Auxiliary_loss_improve_EEG_classification/feature_geometry.png": "615ea7d1c5290bb4eb2afb641a186e9bd0b1925a1adaff1e612494863922e162",
+  "assets/Auxiliary_loss_improve_EEG_classification/feature_pca.png": "16114f185ee902103465ade0b8e33b6c4f3f52205874aa5ea4da0f3e130d593d",
+  "assets/Auxiliary_loss_improve_EEG_classification/readout_comparison.png": "1aa0023017a851602c92649f5723530cbe8acd427fdd586aa8874072ab68922d",
   "assets/classification-roc.png": "dc96fccdd6ace152778bfa170b27da8631edf4d79f177e25b7d290486f778d78",
   "assets/diagnosis-age-umap.png": "462ad3f91021a3468f7055621257f96fd3e783ff08047c7da07f452e1f3c2148",
   "assets/EEG_compression/clean_band_reconstruction.png": "0f15ff958233ab9dc1eb323229561b7d445ab51289efea7763a0e14c8582a316",
@@ -15,8 +18,9 @@
   "assets/MEG_religion/exp1_network_coefficients.png": "670e492c6b0507de526fccd5740cfa17720aa09a5495216653a5ad0c617f863e",
   "assets/MEG_religion/fooof_parcel_overview.png": "7831c91da7b7e75b8b9293160114401b0b3493edab159da45cc8fd50533edf29",
   "assets/patients-controls-umap.png": "befb8dcfc3ba4d490879f0302164b1c83a76f38fe82b6ce48760d603e68e59b9",
+  "Auxiliary loss improve EEG classification.md": "e768ca7c7fbc2ef0060405987f4fc278f162b3d7e0cc250edca20ec7d7dd514b",
   "EEG classification better needs control studies.md": "99698b4dfb98034f87dec9a3017af66d37ec2b8035f3f13422a85fea9e5be8f5",
   "EEG compression ratio.md": "b80ec5c466d39471bf1c8e3da0d9761cb306e71e795774e009b7cee8168376a9",
-  "index.md": "84c64d2ab762dd823418c1f3e5f3d37dbd624e6054447da82cf3c00ef8a35eb4",
+  "index.md": "43ac3d729879ad168b9c9c98d34b5e329f1ee7cf5da19d7e50c78d6120d6f4aa",
   "Religiosity in autistic and schizotypal traits.md": "4970a95d18d1a6d0630f4734118fcf75bb2370b2a92b157614ca6f2ef57e4956"
 }
