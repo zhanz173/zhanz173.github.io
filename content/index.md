@@ -1,71 +1,45 @@
 ---
-title: Mostly about EEG
-description: Notes
+title: Machine learning & computational neuroscience
+description: Applied machine learning researcher and software engineer working on clinical EEG, representation learning, and uncertainty at Simon Fraser University.
 cssclasses:
-  - research-home
----
-## About me
-
-I am a machine learning engineer / software engineer working at the intersection of machine learning, biomedical signal processing, and scientific computing.
-
-I am currently completing an MSc at Simon Fraser University, where my research focuses on machine learning for large-scale clinical EEG data. My work includes representation learning, ordinal prediction, signal processing, and modeling uncertainty in routine clinical data.
-
-Previously, I worked at Huawei Technologies on production C/C++ software. I am interested in machine learning engineering, research development, and biomedical AI roles where I can work across modeling, data, and software systems.
-
----
-## About This Site
-
-This site is a collection of projects, experiments, and technical notes during my MSc study. The site is repurposed from my Obsidian markdown and published as an interconnected set of notes. 
-
----
+  - personal-home
 ---
 
-## Projects
+<div class="hero">
+<div class="hero-copy">
+<p class="eyebrow">Machine learning · Computational neuroscience</p>
+<p class="hero-intro">I study how machine learning can help understand human scalp EEG data, with a focus on representation learning, diagnostic uncertainty, and automated EEG classification.</p>
+<p class="hero-bio">My research at Simon Fraser University focuses on computational modeling of EEG and clinical classification. Previously, I built production C/C++ software at Huawei.</p>
+<div class="hero-actions"><a class="button primary" href="./research">My research notes <span aria-hidden="true">↗</span></a><a class="button" href="./assets/Zhenyu-Zhang-CV.pdf" data-no-popover="true">Download CV <span aria-hidden="true">↓</span></a></div>
+<p class="opportunity-note"><span class="status-dot" aria-hidden="true"></span>Interested in PhD opportunities and applied ML roles</p>
 
-### Religiosity in autistic and schizotypal traits
+</div>
+<aside class="research-focus" aria-label="Work experience">
+<div class="eyebrow"><strong> Work experience</strong></div>
+<div class="experience-snapshot"><div>
+<span>2024–present</span><strong>Graduate Researcher</strong><p>Simon Fraser University</p></div><div><span>2023–2024</span><strong>Software Engineer</strong><p>Huawei Technologies</p></div><div><span>2022–2023</span><strong>Research Intern</strong><p>National Research Council Canada</p></div></div>
+</aside>
+</div>
 
-**MEG · religiosity · diametric model · 2026**
 
-This study tests the diametric model by examining whether religious faith relates differently to resting brain activity in 100 participants with contrasting autistic and schizotypal trait profiles. MEG analyses revealed group differences in the association between religiosity and alpha power, but the findings were not specific to the default mode network, and their underlying spectral basis remained unclear.
+<section class="home-section" id="selected-research" aria-labelledby="research-heading">
+<div class="section-heading"><div><p class="eyebrow">Questions, experiments, findings</p><h2 id="research-heading"> Previous research </h2></div><a href="./research">All research & notes <span aria-hidden="true">↗</span></a></div>
+<div class="project-grid">
+<div class="project-card"><span class="project-type">Clinical EEG · Uncertainty</span><h3><a href="./Are-uncertain-EEG-reports-noisy-labels">When an EEG report is uncertain, what does the signal say?</a></h3><p>Using foundation-model representations to separate borderline electrophysiology from potential label noise in clinical reports.</p><a class="card-link" href="./Are-uncertain-EEG-reports-noisy-labels">Read the study <span aria-hidden="true">↗</span></a></div>
+<div class="project-card"><span class="project-type">Representation learning · EEG</span><h3><a href="./Auxiliary-Losses-Improve-Clinical-EEG-Classification">Learning beyond the classification label</a></h3><p>Exploring how reconstruction and contrastive objectives affect clinical classification, feature geometry, and subject identifiability.</p><a class="card-link" href="./Auxiliary-Losses-Improve-Clinical-EEG-Classification">Read the technical note <span aria-hidden="true">↗</span></a></div>
+<div class="project-card"><span class="project-type">MEG · Computational neuroscience</span><h3><a href="./Religiosity-in-autistic-and-schizotypal-traits">Brain activity, beliefs, and individual differences</a></h3><p>A resting-state MEG study of 100 participants examining how trait profiles shape associations between religiosity and spectral activity.</p><a class="card-link" href="./Religiosity-in-autistic-and-schizotypal-traits">Read the study <span aria-hidden="true">↗</span></a></div>
+</div>
+</section>
 
-[[Religiosity in autistic and schizotypal traits|Read the experiment →]]
 
----
-### Are uncertain EEG reports noisy labels or borderline signals?
+<section class="home-section" aria-labelledby="publications-heading">
+<div class="section-heading"><div><p class="eyebrow">Writing & scholarship</p><h2 id="publications-heading">Publications & manuscripts</h2></div></div>
+<div class="publication"><span class="publication-year">2026</span><div><h3>Report-derived certainty preserves graded electrophysiological information</h3><p>Z. Zhang, G. Medvedev, A. Moiseev, S. Doesburg et al.</p><span class="publication-venue">IEEE Journal of Biomedical and Health Informatics · In revision</span></div></div>
+<div class="publication"><span class="publication-year">2023</span><div><h3>Domestic Sound Classification with Deep Learning</h3><p>Z. Zhang, Y. Shen, J. Valdes, S. Huq, B. Wallace, J. Green, P. Xi, R. Goubran</p><span class="publication-venue">IEEE Sensors Applications Symposium</span></div></div>
+<div class="publication"><span class="publication-year">2023</span><div><h3>Haustral Rhythmic Motor Patterns of the Human Large Bowel Revealed by Ultrasound</h3><p>A. Hussain, Z. Zhang, J. Yu et al.</p><span class="publication-venue">American Journal of Physiology – Gastrointestinal and Liver Physiology · 325: G295–G305</span></div></div>
+<p class="publication-note">Full research contributions and manuscript details are available in my <a href="./assets/Zhenyu-Zhang-CV.pdf" data-no-popover="true">CV</a>.</p>
+</section>
 
-**EEG · classification · uncertainty · 2026**
-
-Whether low-confidence EEG reports reflect noisy labels or genuinely borderline EEG evidence.
-Using frozen LaBraM and REVE representations, we found that uncertain cases tend to sit closer to the normal–abnormal decision boundary and have more mixed neighborhoods of confident normal and abnormal EEGs. At the same time, a smaller subset shows strong disagreement between the report and the surrounding feature-space evidence suggesting label noise.
-
-[[Are uncertain EEG reports noisy labels|Read the experiment →]]
-
----
-
-### EEG classification better needs control studies
-
-**EEG · classification · 2025**
-
-An experiment comparing pretrained EEG representations with spectral features raises a more difficult question: what is the classifier actually learning? This note explores why promising discrimination needs stronger controls before it can support disease-specific claims.
-
-[[EEG classification better needs control studies|Read the experiment →]]
-
----
----
-
-## Notes
-
-### Auxiliary loss improve clinical EEG classification 
-**EEG · classification · contrastive learning**
-
-Auxiliary objectives help EEG classifiers learn beyond noisy clinical labels. Reconstruction and contrastive alignment improve classification. Within-patient contrastive negatives also reduce subject identifiability, suggesting that negative sampling can influence representations preservation, even without clearer class clustering.
-
-[[Auxiliary loss improve EEG classification]]
-
----
-### EEG compression ratio
-**EEG · Autoencoder**
-
-Stronger compression preferentially degrades faster EEG activity while low-frequency delta remains comparatively well preserved. MSE prioritizes signal energy over task relevance. Under compression, it may discard low-energy features that carry more important information.
-
-[[EEG compression ratio]]
+<section class="contact-section" id="contact" aria-label="Get in touch">
+<p class="eyebrow">Get in touch</p><p>I’m interested in PhD research in foundation models of the brain or industrial opportunities in machine learning engineering, research development, and biomedical AI.</p><div class="contact-links"><a href="mailto:zza320@sfu.ca">zza320@sfu.ca <span aria-hidden="true">↗</span></a><a href="https://github.com/zhanz173">GitHub <span aria-hidden="true">↗</span></a><a href="./assets/Zhenyu-Zhang-CV.pdf" data-no-popover="true">CV <span aria-hidden="true">↓</span></a></div>
+</section>

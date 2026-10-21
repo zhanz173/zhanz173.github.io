@@ -1,4 +1,4 @@
-#EEG #ML #label_uncertainty #classifcation
+#EEG #ML #label_uncertainty #classification
 
 Clinical EEG reports rarely behave like the clean binary labels we use to train machine-learning models. A neurologist may describe an EEG as clearly normal, probably normal, suspicious but not definitive, or clearly abnormal. When we reduce all of this language to **normal vs. abnormal**, we throw away something potentially important: how clear the evidence appeared to the reader.
 

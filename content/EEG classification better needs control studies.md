@@ -1,4 +1,4 @@
-#EEG #ML #classifcation
+#EEG #ML #classification
 
 Leading models in popular Temple University dataset (TUBA) can achieve near 90% accuracy. The results looked promising if we focused on narrow EEG abnormality detection. It becomes much harder to interpret when we asked what the model might actually be recognizing. They could simply learn confounding factors rather than disease-specific biomarkers. This short experiment expose a problem in model evaluation: **a model can perform well while doesn't learn meaningful biomarker.**
 

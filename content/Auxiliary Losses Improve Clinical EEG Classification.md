@@ -1,4 +1,4 @@
-#notes #classifcation #contrastive_learning
+#notes #classification #contrastive_learning
 
 ## Background
 
@@ -72,6 +72,24 @@ This result was not entirely unexpected. Inter-subject variance is a well-docume
 ![Feature projection](feature_pca.png)
 *Figure guide:* Each model is projected into its own PCA coordinates; position and axes cannot be compared interchangeable.  Each feature map is pooled by learned attention weight. These panels show substantial class overlap within each space; temporal CLIP (0.1) model retains the most feature variances, followed by Huber (1). 
 
+### MIL attention concentration
+
+Epileptiform classification relies more on temporally localized transient evidence, thus should produce more concentrated attention than non-epileptiform classification. A related hypothesis is that auxiliary supervision, particularly LaBraM CLIP, encourages more selective window weighting.
+
+The results show epileptiform EEGs have lower entropy and active windows in all three models and all three seeds. Mean entropy for epileptiform versus non-epileptiform EEGs is **0.869 versus 0.914** for CE, 0.840 versus 0.904 for Huber, and 0.777 versus 0.847 for LaBraM CLIP. LaBraM CLIP produces the most concentrated attention, with effective-window fractions of 0.507 and 0.605, compared with 0.654 and 0.756 for CE. These findings support greater attention selectivity, particularly with LaBraM supervision. 
+
+![Attention concentration by label](attention_by_label_three_models.png)
+*Figure guide:* The concentration of window attention weights for CE, CE + Huber, and CE + LaBraM temporal CLIP, separately for epileptiform and non-epileptiform EEGs. The left panel shows normalized attention entropy: values near 1 indicate uniform weighting, whereas lower values indicate greater concentration on selected windows. The right panel shows the effective number of attended windows divided by the number of valid windows. Thin lines connect group averages for each seed.
+
+
+If auxiliary supervision preserves the baseline model’s window selection strategy, correlations with CE should be high. Lower correlations suggest that auxiliary losses change which window receive greater emphasis
+
+CE and CE+Huber show the strongest agreement. LaBraM temporal CLIP agrees less with both baseline CE and Huber. The similar Pearson and Spearman results indicate differences in both the weighting pattern and the window rankings, rather than merely differences in attention concentration.
+
+These findings suggest that auxiliary supervision changes temporal weighting substantially; CLIP contrastive loss shifts the attention pattern more than Huber reconstruction, even though the classification performance remains close. However, this does not establish which windows are more clinically relevant or that changed attention pattern explains the classification improvement.
+
+![[attention_correlation_matrices_three_models.png]]
+*Figure guide:* The matrices compare similarity of window attention weights from the original classifier readout. Pearson correlation measures agreement in attention-weight fluctuations, while Spearman correlation measures agreement in window importance rankings. Correlations are calculated within each recording, then averaged equally across recordings and seeds.
 
 ## Conclusion 
 
